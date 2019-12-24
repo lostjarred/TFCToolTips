@@ -36,10 +36,15 @@ val Tooltipstoadd = {
     <tfc:ore/native_gold> : generateOreTooltip("Gold", getNormalOreAmmount()),
     <tfc:ore/native_gold:2> : generateOreTooltip("Gold", getRichOreAmmount()),
 
-    <tfc:ore/small/native_platinum> : generateOreTooltip("Gold", getSmallOreAmmount()),
-    <tfc:ore/native_platinum:1> : generateOreTooltip("Gold", getPoorOreAmmount()),
-    <tfc:ore/native_platinum> : generateOreTooltip("Gold", getNormalOreAmmount()),
-    <tfc:ore/native_platinum:2> : generateOreTooltip("Gold", getRichOreAmmount())
+    <tfc:ore/small/native_platinum> : generateOreTooltip("Platinum", getSmallOreAmmount()),
+    <tfc:ore/native_platinum:1> : generateOreTooltip("Platinum", getPoorOreAmmount()),
+    <tfc:ore/native_platinum> : generateOreTooltip("Platinum", getNormalOreAmmount()),
+    <tfc:ore/native_platinum:2> : generateOreTooltip("Platinum", getRichOreAmmount()),
+
+    <tfc:ore/small/hematite> : generateOreTooltip("Iron", getSmallOreAmmount()),
+    <tfc:ore/hematite:1> : generateOreTooltip("Iron", getPoorOreAmmount()),
+    <tfc:ore/hematite> : generateOreTooltip("Iron", getNormalOreAmmount()),
+    <tfc:ore/hematite:2> : generateOreTooltip("Iron", getRichOreAmmount()),
 } as string[IIngredient];
 
 for item, tooltip in Tooltipstoadd {
