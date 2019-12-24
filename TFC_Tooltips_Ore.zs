@@ -21,10 +21,10 @@ function getRichOreAmmount() as string{
 }
 
 function generateOreTooltip (metal as string, ammount as string) as string {
-    var tooltip = "Metal: " + metal + " Ammount: " + ammount;
+    var tooltip = "Metal: " + metal + " Units: " + ammount;
 }
 
-//<minecraft:chest> : "Storage, what can I say more?",
+//<minecraft:chest> : "Storage?",
 val Tooltipstoadd = {
     <tfc:ore/small/native_copper> : generateOreTooltip("Copper", getSmallOreAmmount()),
     <tfc:ore/native_copper:1> : generateOreTooltip("Copper", getPoorOreAmmount()),
@@ -70,9 +70,14 @@ val Tooltipstoadd = {
     <tfc:ore/limonite:1> : generateOreTooltip("Iron", getPoorOreAmmount()),
     <tfc:ore/limonite> : generateOreTooltip("Iron", getNormalOreAmmount()),
     <tfc:ore/limonite:2> : generateOreTooltip("Iron", getRichOreAmmount()),
+
+    <tfc:ore/small/sphalerite> : generateOreTooltip("Zinc", getSmallOreAmmount()),
+    <tfc:ore/sphalerite:1> : generateOreTooltip("Zinc", getPoorOreAmmount()),
+    <tfc:ore/sphalerite> : generateOreTooltip("Zinc", getNormalOreAmmount()),
+    <tfc:ore/sphalerite:2> : generateOreTooltip("Zinc", getRichOreAmmount()),
 } as string[IIngredient];
 
-for item, tooltip in Tooltipstoadd {
+for itemIIngredient, tooltipString in Tooltipstoadd {
     //item.addTooltip(tT);
-    item.addTooltip(tooltip);
+    itemIIngredient.addShiftTooltip(tooltipString);
 }
