@@ -22,6 +22,7 @@ function getRichOreAmmount() as string{
 
 function generateOreTooltip (metal as string, ammount as string) as string {
     var tooltip = "Metal: " + metal + " Units: " + ammount;
+    return tooltip;
 }
 
 //<minecraft:chest> : "Storage?",
