@@ -76,6 +76,11 @@ val Tooltipstoadd = {
     <tfc:ore/sphalerite:1> : generateOreTooltip("Zinc", getPoorOreAmmount()),
     <tfc:ore/sphalerite> : generateOreTooltip("Zinc", getNormalOreAmmount()),
     <tfc:ore/sphalerite:2> : generateOreTooltip("Zinc", getRichOreAmmount()),
+
+    <tfc:ore/small/tetrahedrite> : generateOreTooltip("Copper", getSmallOreAmmount()),
+    <tfc:ore/tetrahedrite:1> : generateOreTooltip("Copper", getPoorOreAmmount()),
+    <tfc:ore/tetrahedrite> : generateOreTooltip("Copper", getNormalOreAmmount()),
+    <tfc:ore/tetrahedrite:2> : generateOreTooltip("Copper", getRichOreAmmount()),
 } as string[IIngredient];
 
 for itemIIngredient, tooltipString in Tooltipstoadd {
