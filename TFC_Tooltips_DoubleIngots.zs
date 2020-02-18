@@ -13,17 +13,25 @@ val Tooltipstoadd = {
     <tfc:metal/double_ingot/bismuth> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/bismuth_bronze> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/black_bronze> : doubleIngotTooltop(),
+
     <tfc:metal/double_ingot/brass> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/bronze> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/copper> : doubleIngotTooltop(),
+
     <tfc:metal/double_ingot/gold> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/lead> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/nickel> : doubleIngotTooltop(),
+
     <tfc:metal/double_ingot/rose_gold> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/tin> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/zinc> : doubleIngotTooltop(),
+
     <tfc:metal/double_ingot/sterling_silver> : doubleIngotTooltop(),
     <tfc:metal/double_ingot/steel> : doubleIngotTooltop(),
+    <tfc:metal/double_ingot/black_steel> : doubleIngotTooltop(),
+    
+    <tfc:metal/double_ingot/blue_steel> : doubleIngotTooltop(),
+    <tfc:metal/double_ingot/red_steel> : doubleIngotTooltop(),
 } as string[IIngredient];
 
 for itemIIngredient, tooltipString in Tooltipstoadd {
